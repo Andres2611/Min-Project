@@ -1,7 +1,6 @@
-import GameStart class Game
-class game:
-    start= True
-    def __init__(self):
+"""
+Here We are going to present de Game Running with the Player in the Game.
+"""
 
 
 

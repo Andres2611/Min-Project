@@ -1,7 +1,6 @@
-class game:
-    def __init__(self):
-        self.start= start
 
-
+"""
+Here we are going to Present The Menu When We Run the Mini Project.
+"""
 
 
