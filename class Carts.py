@@ -21,30 +21,39 @@ def createcart():
     i=1
     number =1
     limit= 52
+    corchets= '['
 
 
     while i <= limit:
         name = number
         if(i<=13):
-            simbol= ' ♥ '
-            color= ' Red '
+            corchets = '\033[91m' + '['
+            simbol= ('\033[91m'+ ' ♥ ')
+            color= '\033[91m'
+
 
         elif(i <= 26):
-            simbol= ' ♣ '
-            color = ' Black '
+            corchets = '\033[90m' + '['
+            simbol= '\033[90m' + ' ♣ '
+            color = '\033[90m'
 
         elif(i <= 39):
+            corchets = '\033[91m' + '['
+            simbol= '\033[91m' + ' ♦ '
+            color= '\033[91m'
 
-            simbol= ' ♠ '
-            color= ' Black '
 
         else:
-            simbol= ' ♦ '
-            color= ' Red '
+            corchets = '\033[90m' + '['
+            simbol= '\033[90m' + ' ♠ '
+            color= '\033[90m'
 
-        print (simbol + str(name) + color + simbol )
+
+        print ( corchets +simbol + str(name) + color + simbol + ']' )
+
         if number==13:
             number =1
+
         else:
             number +=1
         i+=1
