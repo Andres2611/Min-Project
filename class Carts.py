@@ -4,11 +4,11 @@ class Carts:
 
     #Meth contructor who define all atributes to use in this class
     def __init__(self, number, color, simbol):
-        self.number= number
-        self.color= color
-        self.simbol= simbol
-        self.name= str(number) + simbol
-        self.limit= 52
+        self.number= number #quantity of each cart
+        self.color= color #the color will be red or black
+        self.simbol= simbol #the simbol can be Spades, Heart, Clover or Diamond
+        self.name= str(number) + simbol #name is a concatenation of number and simbol
+        self.limit= 52 #the limit of the carts is 52 only
 
     def look(self):
         pass
@@ -26,23 +26,23 @@ def createcart():
     while i <= limit:
         name = number
         if(i<=13):
-            simbol= ' Heart'
+            simbol= ' ♥ '
             color= ' Red '
 
         elif(i <= 26):
-            simbol= ' Clover'
+            simbol= ' ♣ '
             color = ' Black '
 
         elif(i <= 39):
 
-            simbol= ' Espade'
+            simbol= ' ♠ '
             color= ' Black '
 
         else:
-            simbol= ' Diamond'
+            simbol= ' ♦ '
             color= ' Red '
 
-        print (str(name) + color + simbol )
+        print (simbol + str(name) + color + simbol )
         if number==13:
             number =1
         else:
